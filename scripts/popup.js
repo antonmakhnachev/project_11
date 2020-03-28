@@ -1,4 +1,4 @@
-class Popup{
+export class Popup{
     open(popupName){
         popupName.classList.add('popup_is-opened')
     }

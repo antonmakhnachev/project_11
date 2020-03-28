@@ -1,3 +1,11 @@
+import {Api} from './api.js';
+import {Card} from './card.js';
+import {CardList} from './cardlist.js';
+import {FormValidator} from './formvalidator.js';
+import {Popup} from './popup.js';
+import {UserInfo} from './userinfo.js';
+
+
 (function(){
   
 
