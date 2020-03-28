@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="style.5d78e1d15bdafceb4bf2.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+          <button class="button user-profile__button">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>
+
+
+    <div class="places-list root__section">
+
+      <!-- Пример вёрстки карточки: -->
+      
+      <!-- <div class="place-card">
+        <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+          <button class="place-card__delete-icon"></button>
+        </div>
+        <div class="place-card__description">
+          <h3 class="place-card__name">Камчатка</h3>
+          <div class="place-card__like-data">
+            <button class="place-card__like-icon"></button>
+            <p class="place-card__like-counter">2</p>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- конец примера. -->
+    </div>
+
+    <!--просмотр картинки-->
+    <div class="popup popup__view-image">
+      <div class="popup__image">
+        <img src="./images/close.svg" alt="" class="popup__close view-image__close">
+      </div>
+    </div>
+
+    <!--форма добавления карточки-->
+    <div class="popup popup__new-place">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close new-place__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new_place">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required minlength='2' maxlength='30'>
+            <p class="popup__err-msg popup__err-msg_user-name"></p>
+            <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку" required>
+            <p class="popup__err-msg popup__err-msg_about-user"></p>
+            <button type class="button popup__button" name="btn_save" disabled>+</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!--форма редактирования профиля-->    
+    <div class="popup popup__edit-profile">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close edit-profile__close">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" name="edit_profile">
+            <input type="text" name="user_name" class="popup__input popup__input_type_user-name" placeholder="Имя" required minlength='2' maxlength='30'>
+            <p class="popup__err-msg popup__err-msg_user-name"></p>
+            <input type="text" name="about_user" class="popup__input popup__input_type_about-user" placeholder="О себе" required minlength='2' maxlength='30'>
+            <p class="popup__err-msg popup__err-msg_about-user"></p>
+            <button type class="button popup__button" name="btn_save" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!--форма добавления аватара-->
+    <div class="popup popup__edit-photo">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close edit-photo__close">
+        <h3 class="popup__title">Обновить аватар</h3>
+        <form class="popup__form" name="new_avatar">
+            <!-- <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required minlength='2' maxlength='30'>
+            <p class="popup__err-msg popup__err-msg_user-name"></p> -->
+            <input type="url" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на аватар" required>
+            <p class="popup__err-msg popup__err-msg_about-user"></p>
+            <button type class="button popup__button" name="btn_save" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+
+    
+    
+
+  </div>
+  
+  <!-- <script src="./scripts/card.js"></script>
+  <script src="./scripts/cardlist.js"></script>
+  <script src="./scripts/popup.js"></script>
+  <script src="./scripts/userinfo.js"></script>
+  <script src="./scripts/formvalidator.js"></script>
+  <script src="./scripts/api.js"></script> -->
+  <script type="module" src="main.ed032271e6a873e12eee.js"></script>
+</body>
+</html>
