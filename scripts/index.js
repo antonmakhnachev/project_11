@@ -20,8 +20,10 @@ import {UserInfo} from './userinfo.js';
 
   const forms = document.querySelectorAll('.popup__form')
 
+  const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
+
   const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort8',
+    baseUrl: serverUrl,
     headers: {
       authorization: '47dcf786-51a8-479f-be0a-1c9390074f6c',
       'Content-Type': 'application/json'
