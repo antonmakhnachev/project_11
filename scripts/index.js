@@ -1,3 +1,13 @@
+import '../pages/index.css';
+import {Api} from './api.js';
+import {Card} from './card.js';
+import {CardList} from './cardlist.js';
+import {FormValidator} from './formvalidator.js';
+import {Popup} from './popup.js';
+import {UserInfo} from './userinfo.js';
+
+
+
 (function(){
   
 
@@ -10,8 +20,10 @@
 
   const forms = document.querySelectorAll('.popup__form')
 
+  const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
+
   const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort8',
+    baseUrl: serverUrl,
     headers: {
       authorization: '47dcf786-51a8-479f-be0a-1c9390074f6c',
       'Content-Type': 'application/json'

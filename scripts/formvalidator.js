@@ -1,4 +1,4 @@
-class FormValidator{    
+export class FormValidator{    
 
     checkInputValidity(event){
         const description=event.target.nextElementSibling;
